@@ -1,44 +1,24 @@
 # data-battle-2023
-Data battle 2023
+Data Battle 2023
 
 ## Description
-Projet pour la Data battle 2023 réalisé par l'équipe Just An Other Team:  
-Le but de ce projet est de recevoir des relevés lithographiques de puits au format pdf et de calculer les quantités des matériaux présents dans ces puits.
+Project for Data Battle 2023 conducted by the team Just An Other Team:  
+The goal of this project is to receive lithographic surveys of wells in PDF format and to calculate the quantities of materials present in these wells using Convolutional Neural Networks (CNN) on graphics.
 
-## Version de python
+## Python Version
 3.9.16
 
-## Dépendances
+## Dependencies
 - pytesseract
 - tensorflow
 - matplotlib
-- panda
+- pandas
 - numpy
-- streamlit (pout l'interface)
+- streamlit (for the interface)
 - open-cv
 - keras_ocr
 - sklearn
 - PIL
 - Levenshtein
-- AIPowerMeter (pour la consommation)
+- AIPowerMeter (for consumption measurement)
 - pypdfium2
-
-## Préparation
-Le pdf doit être placé dans un dossier input à la racine du projet.
-
-## Lancement du script
-``` shell
-python3 run read_pdf.py -f <chemin_depuis_input/nom_du_fichier.pdf> -f false
-```
-
-## Affichage de la consommation
-```shell
-python3 run enregistrementConso.py
-```
-Ce script requiert que le dossier NO_Quad_15 soit placé dans input.
-
-## Lancement de l'interface (incomplet)
-``` shell
-streamlit run interface.py
-```
-Sélectionnez ensuite le fichier pdf situé directement dans input.
